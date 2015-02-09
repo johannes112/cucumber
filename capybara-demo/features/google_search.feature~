@@ -1,0 +1,7 @@
+Feature: Google Search
+
+  Scenario: Search for Johannes
+    Given I am on the Google homepage
+    When I search for "Johannes Launer"
+    Then I should see "Student"
+
