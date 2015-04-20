@@ -6,3 +6,5 @@ sudo apt-get install qt5-default libqt5webkit5-dev
 #install gems 
 sudo gem install capybara-webkit
 sudo gem install selenium-webdriver
+#execute cucumber on ubuntu
+cucumber capybara-demo
