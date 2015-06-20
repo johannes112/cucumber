@@ -1,10 +1,12 @@
-# to start cucumber-tests on ubuntu14.04 install a few things:
-sudo apt-get install ruby-dev
-sudo apt-get install cucumber
-sudo apt-get install make
-sudo apt-get install qt5-default libqt5webkit5-dev
-#install gems 
-sudo gem install capybara-webkit
-sudo gem install selenium-webdriver
-#execute cucumber on ubuntu
-cucumber capybara-demo
+#for execution with help of headless browser "poltergeist" on ubuntu:
+sudo apt-get install poltergeist
+#for installing gems use: 
+bundle install 
+#on linux: to execute tests:
+#headless:
+cucumber HEADLESS=true
+#with selenium on firefox:
+cucumber HEADLESS=false
+#with phantomjs
+cucumber HEADLESS=poltergeist
+

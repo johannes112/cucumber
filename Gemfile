@@ -7,3 +7,5 @@ gem 'rails'
 gem "json"
 gem "capybara"
 gem "rspec"
+gem 'expectations'
+gem 'poltergeist'
