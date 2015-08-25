@@ -6,9 +6,14 @@ gem 'cucumber'
 gem 'rails'
 gem "json"
 gem "capybara"
-gem "rspec"
 gem 'expectations'
 gem 'poltergeist'
+gem 'watir-webdriver'
+gem 'watir'
+gem 'spork'
+gem "rspec"#, :require => "spec"
+gem "rack-test", require: "rack/test"
+gem 'rest_client'
 
 group :test, :development do
   # These are the target gems of this tutorial

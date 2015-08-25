@@ -1,4 +1,4 @@
-     #Simple sample of cucumbertest
+     #Simple sample of cucumbertest how to interact with website-elements
      @search
    Feature: Search
      

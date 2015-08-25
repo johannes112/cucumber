@@ -1,57 +1,23 @@
+
 #to start headless cucumbertests: HEADLESS='true' cucumber
 if ENV['HEADLESS'] == 'true'
   $stdout.write "Headless\n"
-  require 'headless'
-  require 'capybara/cucumber'
-  Capybara.default_driver = :selenium
-  headless = Headless.new
-  headless.start
-  at_exit do
-    headless.destroy
-  end
+  require_relative './drivers/headless_config.rb'
+elsif ENV['HEADLESS'] == 'watir'
+  $stdout.write "watir\n"
+  require_relative './drivers/watir_config.rb'
 elsif ENV['HEADLESS'] == 'false'
   $stdout.write "With\n"
   require 'capybara/cucumber'
-  Capybara.default_driver = :selenium
 elsif ENV['HEADLESS'] == 'poltergeist'
   $stdout.write "poltergeist\n"
-    # DEFAULT: headless tests with poltergeist/PhantomJS
-  require 'rspec/expectations'
-  require 'capybara/cucumber'
-  require 'capybara/poltergeist'
-  Capybara.register_driver :poltergeist do |app|
-    Capybara::Poltergeist::Driver.new(
-      app,
-         #page.driver.resize(400,600)
-     #page.save_screenshot("/Users/user/Desktop/test.pdf")
-     #puts page.within_window
-     #puts page.driver.network_traffic
-     #puts page.driver.cookies
-     #puts page.response_headers.to_a
-      window_size: [1280, 1024]#,
-      #debug:       true
-    )
-  end
-  Capybara.default_driver    = :poltergeist
-  Capybara.javascript_driver = :poltergeist
+  # DEFAULT: headless tests with poltergeist/PhantomJS
+  require_relative './drivers/poltergeist_config.rb'
 elsif ENV['HEADLESS'] == 'saucelabs'
-  $stdout.write "Saucelabs\n"
-  require 'capybara/cucumber'
-  require "sauce"
-  require "sauce/capybara"
-  require "sauce/cucumber"
-
-  Capybara.default_driver = :sauce
-  # Set up configuration
-  Sauce.config do |c|
-    c[:browsers] = [ 
-     ["Windows 8", "Internet Explorer", "10"],             
-     ["Windows 7", "Firefox", "20"],
-     ["OS X 10.8", "Safari", "6"],                         
-     ["Linux", "Chrome", nil]          
-     ]
-end
+  $stdout.write "saucelabs\n"
+  #require_relative './drivers/saucelabs_config.rb'
+  puts "To use saucelabs please execute the shellscript 'run_cucumber.sh'\n\n\n"
 else
-  $stdout.write "Nix\n"
+  $stdout.write "Die Variable 'HEADLESS' mit richtigem Parameter existiert nicht.\nMoegliche Parameter:\n\t-HEADLESS=true\n\t-HEADLESS=false\n\t-HEADLESS=poltergeist\n\nBeispiel für richtigen Aufruf:\n\t-HEADLESS=true cucumber\n\nTo run with tags: \nHEADLESS=true cucumber -t @search"
   exit
 end

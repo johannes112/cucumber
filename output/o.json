@@ -1,0 +1,243 @@
+[
+  {
+    "comments": [
+      {
+        "value": "#Simple sample of cucumbertest how to interact with website-elements",
+        "line": 1
+      }
+    ],
+    "keyword": "Feature",
+    "name": "Search",
+    "line": 3,
+    "description": "\nAs a customer,\ni will be able to search for a product",
+    "tags": [
+      {
+        "name": "@search",
+        "line": 2
+      }
+    ],
+    "id": "search",
+    "uri": "features/search.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "Search for teller",
+        "line": 8,
+        "description": "",
+        "id": "search;search-for-teller",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the vega-website",
+            "line": 9,
+            "output": [
+              [
+
+              ],
+              "http://www.vega-direct.com/",
+              {
+                "name": "emnlpc",
+                "value": "1",
+                "path": "/",
+                "domain": "www.vega-direct.com",
+                "expires": null,
+                "secure": false
+              },
+              {
+                "name": "emnlpc",
+                "value": "1",
+                "path": "/",
+                "domain": "www.vega-direct.com",
+                "expires": null,
+                "secure": false
+              },
+              [
+                {
+                  "name": "__utmt",
+                  "value": "1",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2015-08-19T08:53:49+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "_ems_session",
+                  "value": "127542173.937108971",
+                  "path": "/",
+                  "domain": "www.vega-direct.com",
+                  "expires": "2015-08-19T08:53:50+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "_ems_visitor",
+                  "value": "127542173.937108971",
+                  "path": "/",
+                  "domain": "www.vega-direct.com",
+                  "expires": null,
+                  "secure": false
+                },
+                {
+                  "name": "_gat_UA-1604878-41",
+                  "value": "1",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2015-08-19T08:53:50+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "_vis_opt_s",
+                  "value": "1%7C",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2015-11-27T08:43:51+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "_vis_opt_test_cookie",
+                  "value": "1",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": null,
+                  "secure": false
+                },
+                {
+                  "name": "_vwo_uuid",
+                  "value": "50391BFF907E8AAE4A88D563F6E6FBB7",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2016-08-18T08:43:51+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "_vis_opt_exp_90_combi",
+                  "value": "1",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2015-11-27T08:43:51+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "PAGECACHE_ENV",
+                  "value": "b9af5006eec316451100735612cc4df7",
+                  "path": "/",
+                  "domain": ".www.vega-direct.com",
+                  "expires": "2015-08-19T12:43:57+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "_ga",
+                  "value": "GA1.2.190609700.1439973831",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2017-08-18T08:43:56+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "frontend",
+                  "value": "2oduifdm150tpephlvicoiumd5",
+                  "path": "/",
+                  "domain": ".www.vega-direct.com",
+                  "expires": "2015-08-19T12:43:57+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "__utma",
+                  "value": "254848783.190609700.1439973831.1439973831.1439973831.1",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2017-08-18T08:43:56+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "__utmb",
+                  "value": "254848783.6.9.1439973837783",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2015-08-19T09:13:57+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "__utmc",
+                  "value": "254848783",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": null,
+                  "secure": false
+                },
+                {
+                  "name": "__utmz",
+                  "value": "254848783.1439973831.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2016-02-17T20:43:56+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "__utmv",
+                  "value": "254848783.|4=VWO-90=Control=1",
+                  "path": "/",
+                  "domain": ".vega-direct.com",
+                  "expires": "2017-08-18T08:43:56+00:00",
+                  "secure": false
+                },
+                {
+                  "name": "emnlpc",
+                  "value": "1",
+                  "path": "/",
+                  "domain": "www.vega-direct.com",
+                  "expires": null,
+                  "secure": false
+                }
+              ]
+            ],
+            "match": {
+              "location": "features/step_definitions/search.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15492371989
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"Teller\"",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Teller"
+                }
+              ],
+              "location": "features/step_definitions/search.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4074590364
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Teller flach Vienna\"",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Teller flach Vienna"
+                }
+              ],
+              "location": "features/step_definitions/search.rb:37"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Unable to find css \"body > div.wrapper > div > div.cont > div.main.col2-left-layout > div.col-main > div:nth-child(8) > div.category-products > ul.products-grid.first.odd > li.item.first > h2 > a\" (Capybara::ElementNotFound)\n./features/step_definitions/search.rb:38:in `/^I should see \"([^\"]*)\"$/'\nfeatures/search.feature:11:in `Then I should see \"Teller flach Vienna\"'",
+              "duration": 2060007557
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
