@@ -1,3 +1,4 @@
+HEADLESS=true cucumber -f html -o output/out.html -t @search
 Usage: cucumber [options] [ [FILE|DIR|URL][:LINE[:LINE]*] ]+
 
 Examples:
